@@ -3,5 +3,31 @@
 {% block body %}
 
     <h1>testing task 2</h1>
+    <div class="container mt-5">
+            <h1>Top 20 Data</h1>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Column 1</th>
+                        <th>Column 2</th>
+                        <!-- Add more columns as needed -->
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for row in data %}
+                    <tr>
+                        <td>{{ row.id }}</td>
+                        <td>{{ row.column1 }}</td>
+                        <td>{{ row.column2 }}</td>
+                        <!-- Add more columns as needed -->
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+    </div>
+    </body>
+    </html>
+    
 
 {% endblock %}

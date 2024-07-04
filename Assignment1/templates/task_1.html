@@ -1,8 +1,8 @@
 {% extends 'base.html' %}
 
 {% block body %}
-<div class="carousel-container">
-<div id="carouselExampleControls" class="carousel slide imgsession" data-ride="carousel">
+<div class="container-fluid imgcursoral">
+<div id="carouselExampleControls" class="carousel slide " data-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
         <img class="d-block w-100" src="{{ images[0] }}" alt="First slide">
@@ -23,25 +23,32 @@
       <span class="sr-only">Next</span>
     </a>
 </div>
-<div class="info">
-    <div class='info1'>
+</div>
+<div class="container-fluid info">
+  <div class="row">
+    <div class='col'>
+      <div class="c1">
+        <h3>Products</h3>
         <ul>
             <li>a</li>
             <li>a</li>
             <li>a</li>
         </ul>
+      </div>
+      
     </div>
-    <div class="info2">
+    <div class="col">
+      <div class="c2">
+      <h3>Services</h3>
         <ul>
-            <li>a</li>
-            <li>a</li>
-            <li>a</li>
+            <li>PowerBi</li>
+            <li>Azure</li>
+            <li>Microsoft Fabric</li>
         </ul>
+      </div>
     </div>
+  </div>
 </div>
-
-</div>
-
 
    
 

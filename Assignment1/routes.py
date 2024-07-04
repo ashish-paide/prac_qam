@@ -1,6 +1,7 @@
 from flask import Flask, render_template
 app = Flask(__name__)
 
+
 # two decorators, same function
 @app.route('/')
 @app.route('/task_1.html')
@@ -14,6 +15,7 @@ def task_1():
 
 @app.route('/task_2.html')
 def task_2():
+    # data=Data.query.limit(20).all()
     return render_template('task_2.html', the_title='Tiger in Myth and Legend')
 
 @app.route('/task_3.html')
