@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+
+{% block body %}
+<div class="contaniner-fluid ">
+<table class="table table-hover task3table">
+    <thead>
+      <tr>
+        <th scope="col">Product Name</th>
+        <th scope="col">Color</th>
+        <th scope="col">Size</th>
+        <th scope="col">Weight</th>
+      </tr>
+    </thead>
+    <tbody>
+        {% for ind in table_html[1].index %}
+                <tr>
+                    <td>{{ table_html[1]['product'][ind] }}</td>
+                    <td>{{ table_html[1]['color'][ind] }}</td>
+                    <td>{{ table_html[1]['size'][ind] }}</td>
+                    <td>{{ table_html[1]['weight'][ind] }}</td>
+                </tr>
+        {% endfor %}
+    </tbody>
+  </table>
+</div>
+    </body>
+    </html>
+{% endblock %}
