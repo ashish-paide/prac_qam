@@ -73,30 +73,18 @@ def retieve_joined_table():
     # Render template or return data as needed
     return pdbd
 
-# print(retrieve_table)
-
-
-# Define the Customer model
-# class Customer(db.Model):
-#     __tablename__ = 'Customer'
-#     __table_args__ = {'schema': 'SalesLT'}
-#     CustomerID = db.Column(db.Integer, primary_key=True)
-#     FirstName = db.Column(db.String)
-#     LastName = db.Column(db.String)
-
-# Two decorators, same function
 @app.route('/')
 def index():
-    images = ['static/images/image.png',
-              'static/images/tiger.jpg',
-              'static/images/naam_tamilar_flag.jpg']
+    images = ['https://th.bing.com/th/id/R.57f3234f65f0f327e7b86860c5cebd71?rik=J70r%2fLnMW4FTWQ&riu=http%3a%2f%2fs1.picswalls.com%2fwallpapers%2f2016%2f06%2f10%2fhd-4k-wallpaper_065239257_309.jpg&ehk=RWo6wC7ClTZZ%2fTcTlBc58QaARl9LC0f4cJz9A0EjB2A%3d&risl=1&pid=ImgRaw&r=0',
+              'https://wallpaperaccess.com/full/38580.jpg',
+              'https://wallpaperaccess.com/full/2180654.jpg']
     return render_template('task_1.html', images=images)
 
 @app.route('/task_1')
 def task_1():
-    images = ['static/images/image.png',
-              'static/images/tiger.jpg',
-              'static/images/naam_tamilar_flag.jpg']
+    images = ['https://th.bing.com/th/id/R.57f3234f65f0f327e7b86860c5cebd71?rik=J70r%2fLnMW4FTWQ&riu=http%3a%2f%2fs1.picswalls.com%2fwallpapers%2f2016%2f06%2f10%2fhd-4k-wallpaper_065239257_309.jpg&ehk=RWo6wC7ClTZZ%2fTcTlBc58QaARl9LC0f4cJz9A0EjB2A%3d&risl=1&pid=ImgRaw&r=0',
+              'https://wallpaperaccess.com/full/38580.jpg',
+              'https://wallpaperaccess.com/full/2180654.jpg']
     
     return render_template('task_1.html', images=images)
 
